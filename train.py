@@ -18,7 +18,7 @@ def get_config():
         choices=['recosa', 'hsan', 'hred', 'gvdialog'])
     parser.add_argument('--task', type=str, help="task name", default='gv', choices=['base', 'gv'])
     parser.add_argument('--corpus-path', type=str, help="path to dialog dataset", default='preprocessed_data/douban')
-    parser.add_argument('--separator', type=str, help="symbol to split sentences in conversations", default='\t')
+    parser.add_argument('--separator', type=str, help="symbol to split sentences in conversations", default=' __eou__ ')
     parser.add_argument('--vocab-path', type=str, help="path to vocabulary", default='cache/cornell')
     parser.add_argument('--cachedir', type=str, help="path to data cache", default='cache/cornell')
     parser.add_argument('--save-cache', action='store_true', help='cache processed data', default=True)

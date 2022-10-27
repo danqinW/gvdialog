@@ -20,7 +20,7 @@ run training:
 python train.py
     --model gvdialog \
     --task gv \
-    --vocab-path path_to_your_vocab \
+    --corpus-path path_to_your_corpus \
     --cache_dir path_to_your_cache  \
     --use-latent \
     --num-encoder-blocks 4 \
